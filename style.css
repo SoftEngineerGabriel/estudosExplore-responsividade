@@ -87,6 +87,10 @@ ul li{
     line-height: 2rem;
 }
 
+ul li + li{
+    margin-top: 3.2rem;
+}
+
 span{
     color: #090039;
 
@@ -95,4 +99,27 @@ span{
     font-weight: 800;
     line-height: 5rem;
     letter-spacing: -0.125rem;
+}
+
+@media (min-width: 40em){
+    body{
+        padding: 8rem;
+    }
+    main{
+        max-width: 1020px;
+
+        display: flex;
+        gap: 7rem;
+    }
+
+    ul li{
+        margin-top: 4.2rem;
+        display: flex;
+        gap: 4rem;
+        align-items: center;
+        min-width: 29rem;
+    }
+    ul li + li{
+        margin-top: 3.2rem;
+    }
 }
